@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="10dp">
+
+        <!-- ImageView for the icon -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_format_list_bulleted_24"
+            android:layout_marginTop="10dp"
+            android:contentDescription="List Icon" />
+
+        <!-- TextView for the text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple List"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a positive integer"
+        android:inputType="number"
+        android:textSize="30dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Even Numbers" />
+
+        <RadioButton
+            android:id="@+id/radioOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odd Numbers" />
+
+        <RadioButton
+            android:id="@+id/radioPerfectSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfect Squares" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <ListView
+        android:id="@+id/listViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
